@@ -10,6 +10,7 @@ import requests
 from colorama import Fore, Style, Back
 from fake_headers import Headers
 import time
+import fade
 
 os.system("clear")
 print("\033[37mSHOULD NOT BE USED TO ATTACK GOVERNMENT SITES")
@@ -17,19 +18,12 @@ time.sleep(5)
 print("\033[37mLoading.......")
 time.sleep(5)
 
-attemps = 0
 os.system("clear")
-print("""
-╔═════════════╗
-║
-╚═════════════╝
-""")
-# Versi dan URL
-print(f"\033[97m╔{'═' * 60}╗")
-print(f"\033[97m║\033[104m{' ' * 4}v.1.0{' ' * 49}  \033[0m║")
-print(f"\033[97m║\033[104m{' ' * 4}https://www.https//kunkaffa@gmail.com{' ' * 17}  \033[0m║")
-print(f"\033[97m╚{'═' * 60}╝")
+logo = """
+██▒▒
 
+"""
+# Versi dan URL
 def check_prox(array, url):
 	ip = r.post("http://ip.beget.ru/").text
 	for prox in array:
