@@ -105,7 +105,7 @@ def main(proxy, url):
 		try:
 			fx = open(proxy)
 			array = fx.read().split()
-			print("Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy)
+			print("Found {} proxies in {}.\nChecking proxies...".format(len(array)), proxy)
 			print("\033[104m\033[37m" +str(url)+ "\033[0m \033[34m")
 			check_prox(array, url)
 		except FileNotFoundError:
