@@ -97,8 +97,8 @@ def main(proxy, url):
 			req = r.get("https://api.proxyscrape.com/?request=displayproxies")
 			array = req.text.split()
 			print(Back.WHITE+Fore.BLACK+"••>Found {} new proxies".format(len(array))+Style.RESET_ALL)
-			print(["\033[38;5;220m╔{'═' * 26}╗")
-			print("\033[104m\033[3m║{' ' * 14}") +str(url)+ "\033[0m║")
+			print("\033[38;5;220m╔{'═' * 26}╗")
+			print("\033[104m\033[3m║{' ' * 14}" +str(url)+ "\033[0m║")
 			print("\033[38;5;220m╚{'═' * 26}╝")
 			check_prox(array, url)
 	else:
