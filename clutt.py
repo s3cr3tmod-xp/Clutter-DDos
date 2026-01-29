@@ -13,10 +13,11 @@ import time
 import fade
 
 os.system("clear")
-print("\033[37mSHOULD NOT BE USED TO ATTACK GOVERNMENT SITES")
+time.sleep(2)
+print("\033[38;5;220mSHOULD NOT BE USED TO ATTACK GOVERNMENT SITES")
 time.sleep(5)
 print("\033[37mLoading.......")
-time.sleep(5)
+time.sleep(3)
 
 os.system("clear")
 logo = """
@@ -35,8 +36,8 @@ logo = """
 ║║            ▒▒▒▒▒▒▒            ▒▒▒▒  ▒           ▒          ║║ 
 ║║        ▒  ▒  ▒   ▒  ▒ ▒ ▒  ▒  ▒    ▒  ▒ ▒ ▒ ▒  ▒  ▒        ║║
 ║║	  ▒   ▒   ▒  ▒ ▒ ▒   ▒  ▒ ▒  ▒  ▒  ▒  ▒               ║║
-║║                                                           ║║
-║║                                                           ║║"""
+║║                                                            ║║
+║║                                                            ║║"""
 faded_text = fade.fire(logo)
 print(faded_text)
 # Versi dan URL
