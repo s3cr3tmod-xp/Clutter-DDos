@@ -35,8 +35,8 @@ logo = """
 ║║            ▒▒▒▒▒▒▒            ▒▒▒▒  ▒           ▒          ║║ 
 ║║        ▒  ▒  ▒   ▒  ▒ ▒ ▒  ▒  ▒    ▒  ▒ ▒ ▒ ▒  ▒  ▒        ║║
 ║║	  ▒   ▒   ▒  ▒ ▒ ▒   ▒  ▒ ▒  ▒  ▒  ▒  ▒               ║║
-║║                                                    ║║
-║║                                                    ║║"""
+║║                                                         ║║
+║║                                                         ║║"""
 faded_text = fade.fire(logo)
 print(faded_text)
 # Versi dan URL
