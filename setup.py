@@ -11,6 +11,6 @@ if c == "0":
 elif c == "1":
     os.system("pip3 install fake_headers")
     os.system("pip3 install requests")
-    os.system("pip3 install click
+    os.system("pip3 install click")
     os.system("pip3 install colorama")
 print("Done.")
