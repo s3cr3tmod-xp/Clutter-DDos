@@ -96,17 +96,17 @@ def main(proxy, url):
 		while True:
 			req = r.get("https://api.proxyscrape.com/?request=displayproxies")
 			array = req.text.split()
-			print(Back.YELLOW+Fore.WHITE+"••>Found {} new proxies".format(len(array))+Style.RESET_ALL)
-			print("\033[104m\033[37m " +str(url)+ "\033[0m")
+			print(Back.WHITE+Fore.BLACK+"••>Found {} new proxies".format(len(array))+Style.RESET_ALL)
+			print(["\033[38;5;220m╔{'═' * 26}╗")
+			print("\033[104m\033[3m║{' ' * 14}") +str(url)+ "\033[0m║")
+			print("\033[38;5;220m╚{'═' * 26}╝")
 			check_prox(array, url)
 	else:
 		try:
 			fx = open(proxy)
 			array = fx.read().split()
-			print("Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy))
-			print("
-			print("\033[104m\033[37m" +str(url)+ "\033[0m \033[34mProssecing 0n")
-			print("
+			print("Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy)
+			print("\033[104m\033[37m" +str(url)+ "\033[0m \033[34m")
 			check_prox(array, url)
 		except FileNotFoundError:
 			print(Fore.RED+"File {} not found.".format(proxy)+Style.RESET_ALL)
