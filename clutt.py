@@ -72,7 +72,7 @@ def start_ddos(prox, url, headers, proxies, color):
 		req = s.get(url, headers=headers, proxies=proxies)
 		if req.status_code == 200:
 			print(color+ "disturb-proxy: {}".format(prox))
-			print("\033[104m\033[37m\033[3mServer gate:\033[0m \033[38;5;220m—>\033[3m" +str(url)+ "\033[0m")
+			print("\033[104m\033[37m\033[3mServer gate :>\033[0m \033[38;5;220m\033[3m" +str(url)+ "\033[0m")
 			
 	except:
 		pass
