@@ -6,9 +6,11 @@ c = input(">>>: ")
 if c == "0":
     os.system("pip install fake_headers")
     os.system("pip requests")
-    os.system("git pull")
+    os.system("pip install click")
+    os.system("pip install colorama")
 elif c == "1":
-    os.system("apt install python")
-    os.system("apt install python2")
-    os.system("git pull")
+    os.system("pip3 install fake_headers")
+    os.system("pip3 install requests")
+    os.system("pip3 install click
+    os.system("pip3 install colorama")
 print("Done.")
