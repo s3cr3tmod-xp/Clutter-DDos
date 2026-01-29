@@ -20,9 +20,19 @@ time.sleep(5)
 
 os.system("clear")
 logo = """
-██▒▒
+  ████         ████         ████
+ █        █     █ █     █████     █
+ █  █    █     █ █ ████    █     █ 
+ █  █    █     █ █   █ ███ ████
+  ████  █     █ █   █ █    █     █
+     █     ████      █ ████
+	 ████             █ 
+▒▒
 
 """
+faded_text = fade.fire(logo)
+print(faded_text)
+
 # Versi dan URL
 def check_prox(array, url):
 	ip = r.post("http://ip.beget.ru/").text
